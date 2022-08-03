@@ -1,0 +1,42 @@
+:root {
+  --bg-color: #f7f8fd;
+  --white: #ffff;
+  --purple: #ad1fea;
+  --blue: #4661e6;
+  --grey: #373f68;
+  --light-color: #f7f8fd;
+  --dark-grey: #3a4374;
+  --light-grey: #293c71;
+  --orange: #f49f85;
+  --light-blue: #62bcfa;
+}
+
+@font-face {
+  font-family: Jost;
+  src: url(../public/Jost-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: Jost;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color);
+  padding: 94px 165px;
+  box-sizing: border-box;
+
+  &>* {
+    margin: 0;
+  }
+
+  button {
+    background: none;
+    border: none;
+    outline: none;
+
+    &:focus {
+      outline: none;
+      border: none;
+    }
+  }
+}

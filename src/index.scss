@@ -9,13 +9,16 @@
   --light-grey: #293c71;
   --orange: #f49f85;
   --light-blue: #62bcfa;
+  --black-shade: #647196;
 }
 
 @font-face {
   font-family: Jost;
   src: url(../public/Jost-Regular.ttf);
 }
-
+*{
+  margin: 0;
+}
 body {
   margin: 0;
   font-family: Jost;

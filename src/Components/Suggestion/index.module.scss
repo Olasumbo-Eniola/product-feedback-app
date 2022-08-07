@@ -80,6 +80,7 @@
         font-weight: 600;
         font-size: 13px;
         line-height: 19px;
+        cursor: pointer;
       }
 
       .active {
@@ -94,9 +95,34 @@
     border-radius: 10px;
     padding: 19px 24px;
     background: var(--white);
-    &>*{
-      margin: 0;
+    position: relative;
+
+    .row {
+      display: flex;
+      align-items: center;
+      vertical-align: middle;
+      color: var(--black-shade);
+
+      .dot {
+        padding: 5px;
+        align-items: center;
+        vertical-align: middle;
+
+        svg {
+          width: 8px;
+          height: 8px;
+
+        }
+      }
     }
+
+    .text {
+      margin-left: 16px;
+      font-size: 16px;
+      flex: 1;
+    }
+
+    .count {}
   }
 }
 
